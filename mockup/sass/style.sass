@@ -1,0 +1,71 @@
+@import reset
+$img: "../images/"
+$indent: -9999px
+
+
+body
+  background: url(#{$img}body-bg.jpg) top left repeat
+  font: 62.5% "Lucida Grande", sans-serif
+
+h1
+  font-family: Georgia,serif
+  font-size: 2.4em
+  color: #a69028
+  font-weight: normal
+  &#logo
+    width: 654px
+    height: 112px
+    background: url(#{$img}header.jpg) no-repeat center center
+    text-indent: $indent
+
+p.metadata
+  background: #fff9a7
+  padding: 3px
+
+#page-wrap
+  width: 654px
+  margin: 0 auto
+  background: url(#{$img}content-bg.jpg) repeat-y
+
+#main-content
+  padding: 30px 50px
+
+#article-area
+  width: 425px
+  float: left
+
+#sidebar
+  width: 92px
+  float: right
+
+.clear
+  clear: both
+
+ul#nav li
+  display: inline
+  a
+    display: block
+    height: 62px
+    text-indent: $indent
+    float: left
+  &.articles a
+    width: 200px
+    background: url(#{$img}nav-articles.jpg) bottom center no-repeat
+  &.downloads a
+    width: 287px
+    background: url(#{$img}nav-downloads.jpg) bottom center no-repeat
+  &.videos a
+    width: 167px
+    background: url(#{$img}nav-videos.jpg) bottom center no-repeat
+  a:hover
+    background-position: center center
+
+#footer
+  min-height: 149px
+  background: url(#{$img}footer-bg.jpg) no-repeat
+
+  a.button 
+    background: black
+    color: white
+    padding: 10px 20px
+    @include border-radius(5px)
