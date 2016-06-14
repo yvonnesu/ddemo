@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>personal portfolio</title>
+    <meta charset="utf-8">
+    <link href="css/index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+<body>
+<!--nav -->
+<nav class="navbar navbar-default navbar-fixed-top " id="bootstrap-overrides-navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#about-section">Yvonne Su</a>
+    </div>
+    <div class="collapse navbar-collapse collapse-items" id="mainNavBar">
+      <ul class="nav  navbar-nav  navbar-right">
+        <li><a href="#about-section">about &nbsp;<span class="glyphicon glyphicon-user"></span></a></li>
+        <li><a href="#portfolio-section">portfolio &nbsp;<span class="glyphicon glyphicon-briefcase"></span></a></li>
+        <li><a href="#contact-section">contact &nbsp;<span class="glyphicon glyphicon-earphone"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav> 
+<!--about section -->
+<div class="jumbotron" id="about-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-offset-4 col-sm-4">
+        <img src="img/female.png" alt="portfolio-avatar" class="img-responsive img-circle" id="portfolio-avatar">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8">
+        <h3 class="jumbotron-content text-center">I am a camper at FreeCodeCamp and I am here to learn about front-end development, making use of its content as well as its vast,rich,and super-smart community.</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<!--portfolio section -->
+<div id="portfolio-section">
+  <h2 class="text-center" id="portfolio">Portfolio</h2>
+  <div class="row">
+    <div class="col-sm-4 col-xs-12 portfolio-item">
+      <a href="http://yvonnesu.cu.cc" class="portfolio-link" target="_blank">
+        <div class="caption">
+          <div class="caption-content">project page</div>
+        </div>
+        <img src="http://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png" class="img-responsive" alt="">
+      </a>
+    </div>
+    <div class="col-sm-4 col-xs-12 portfolio-item">
+      <a href="#portfolioModal2" class="portfolio-link" >
+        <div class="caption">
+          <div class="caption-content" id="portfolioModal2">Random Quote Machine</div>
+        </div>
+        <img src="http://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cake.png" class="img-responsive" alt="">
+      </a>
+    </div>
+    <div class="col-sm-4 col-xs-12 portfolio-item">
+      <a href="#portfolioModal3" class="portfolio-link" >
+        <div class="caption">
+          <div class="caption-content" id="portfolioModal3">Wikipedia Viewer</div>
+        </div>
+        <img src="http://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/circus.png" class="img-responsive" alt="">
+      </a>
+    </div>  
+  </div>
+
+  <br>
+ 
+  <div class="row">
+    <div class="col-sm-4 col-xs-12 portfolio-item">
+      <a href="#portfolioModal4" class="portfolio-link" target="_blank">
+        <div class="caption">
+          <div class="caption-content" id="portfolioModal4">Twitch TV</div>
+        </div>
+        <img src="http://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/submarine.png" class="img-responsive" alt="">
+      </a>
+    </div>
+    <div class="col-sm-4 col-xs-12 portfolio-item">
+      <a href="#portfolioModal5" class="portfolio-link" >
+        <div class="caption">
+          <div class="caption-content" id="portfolioModal5">Javascript Caculator</div>
+        </div>
+        <img src="http://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/safe.png" class="img-responsive" alt="">
+      </a>
+    </div>
+    <div class="col-sm-4 col-xs-12 portfolio-item">
+      <a href="#portfolioModal6" class="portfolio-link" >
+        <div class="caption">
+          <div class="caption-content" id="portfolioModal6">Pomodoro Clock</div>
+        </div>
+        <img src="http://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/game.png" class="img-responsive" alt="">
+      </a>
+    </div>  
+  </div> 
+</div>
+<!--contact section -->
+<div id="contact-section">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">Contact</h1>
+    </div>
+
+    <br>
+
+    <div class="row">
+     <div class="col-sm-12">
+       <ul class="nav nav-tabs nav-justified" id="nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#ContactForm">ContactForm</a></li>
+        <li><a data-toggle="tab" href="#Address">Address</a></li>
+       </ul>
+     </div>
+    </div>
+
+     <div class="tab-content">
+       <div id="ContactForm" class="tab-pane fade in active">
+        <div class="row">
+          <form class="form-horizontal" id="ContactForm">
+
+            <div class="form-group">
+
+              <label for="nameInput" class="control-label col-xs-offset-1 col-xs-2">Your Name</label>
+
+              <div class="col-xs-8">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                  </span>
+                  <input type="text" name="nameInput" class="form-control" placeholder="ur name">
+                  <span class="input-group-addon">!</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+
+              <label for="emailInput" class="control-label col-xs-offset-1 col-xs-2">Your Email</label>
+
+              <div class="col-xs-8">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <span>@</span>
+                  </span>
+                  <input type="email" name="emailInput" class="form-control" placeholder="ur email">
+                  <span class="input-group-addon">!</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+
+              <label class="control-label col-xs-offset-1 col-xs-2">Message</label>
+
+              <div class="col-xs-8">
+                <textarea cols="30" rows="6" class="form-control" placeholder="u'r awesome"></textarea>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+
+              <div class="col-xs-offset-3 col-xs-2">
+
+                <button type="button" class="btn" data-toggle="modal" data-target="#submitModal">Submit</button>
+
+              </div>
+
+            </div>
+          </form>
+        </div>
+       </div>
+       <div id="Address" class="tab-pane fade">
+        <h3>Address</h3>
+        <div>
+          <address>
+            123 Main Street
+            <br />Taipei,Taiwan 
+            <br />
+            <abbr title="Phone">Phone:</abbr>
+            0900.000.000
+          </address>
+          <address>
+            <strong>Support: </strong>
+            <a href="mailto:Support@yvonnesu.com">
+            Support@yvonnesu.com</a><br>
+            <strong>Marketing: </strong><a href="mailto:Marketing@yvonnesu.com">Marketing@yvonnesu.com</a>
+          </address>
+        </div>          
+       </div>
+
+      </div>
+    
+  </div>
+</div>
+<!--footer section-->
+<div id=footer-section>
+  <div class="title text-center">Social Icons Link</div>
+  <div class="social-icons text-center">
+   <!--Facebook Link  -->
+   <a href="https://www.facebook.com/yvonne.su.982" target="_blank" >
+    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+   </a>
+   <!--GitHub Link-->
+   <a href="https://github.com/yvonnesu" target="_blank">
+    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+   </a>
+   <!--Medium Link-->
+   <a href="https://medium.com/@articulation7" target="_blank">
+    <i class="fa fa-medium fa-2x" aria-hidden="true"></i>
+   </a>
+   <!--codepen Link-->
+   <a href="http://codepen.io/elephant3878/pens/public/" target="_blank">
+    <i class="fa fa-codepen fa-2x" aria-hidden="true"></i>
+   </a>
+  </div>
+  <div class="copyright text-center" id="copyright">
+  <p>COPYRIGHT<span class="glyphicon glyphicon-copyright-mark"></span>
+   2016, NO RIGHTS RESERVED.FEEL FREE TO USE</p>
+  </div>
+ </div> 
+
+
+<footer>
+  
+
+</footer>
+
+</body>
+</html>
